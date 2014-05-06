@@ -1,0 +1,16 @@
+{
+  "name": "oban-themes",
+  "version": "0.1.0",
+  "main": "oban-neat.less",
+  "dependencies": {
+    "oban": "~0.15.0"
+  },
+  "ignore": [
+    "example",
+    "grunt",
+    "node_modules",
+    "styleguide",
+    "Gruntfile.js",
+    "package.json"
+  ]
+}

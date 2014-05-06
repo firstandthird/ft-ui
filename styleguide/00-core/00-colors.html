@@ -1,0 +1,22 @@
+<% if (typeof colors !== 'undefined') { %>
+<div class="sg-colors" data-code-skip>
+  <table>
+    <thead>
+      <tr>
+        <th>Color</th>
+        <th>Hex</th>
+        <th>Less Variable</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% colors.forEach(function(color) { %>
+      <tr>
+        <td class="sg-swatch"></td>
+        <td class="sg-hex"><%= color.hex %></td>
+        <td><%= color.var %></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+<% } %>

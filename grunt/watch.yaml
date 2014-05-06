@@ -1,0 +1,26 @@
+css:
+  files:
+    - oban-neat.less
+    - lib/*.less
+  tasks:
+    - css
+styleguide:
+  files:
+    - styleguide/**/*
+  tasks:
+    - styles
+example:
+  files:
+    - example/*
+  options:
+    livereload: true
+build:
+  files:
+    - grunt/*
+    - Gruntfile.js
+    - package.json
+    - bower.json
+  tasks:
+    - default
+  options:
+    reloat: true

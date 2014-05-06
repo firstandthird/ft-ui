@@ -1,0 +1,7 @@
+example:
+  options:
+    paths:
+      - bower_components/oban
+  src:
+    - oban-neat.less
+  dest: example/neat.css

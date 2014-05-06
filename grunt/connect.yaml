@@ -1,0 +1,4 @@
+example:
+  options:
+    base: example/
+    livereload: true

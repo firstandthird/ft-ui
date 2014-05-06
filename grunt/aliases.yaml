@@ -1,0 +1,9 @@
+css:
+  - less
+default:
+  - styles
+  - css
+dev:
+  - default
+  - connect
+  - watch

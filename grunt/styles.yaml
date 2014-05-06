@@ -1,0 +1,7 @@
+neat:
+  options:
+    data:
+      projectTitle: Oban Neat
+      cssFile: neat.css
+  src: styleguide
+  dest: example/index.html
