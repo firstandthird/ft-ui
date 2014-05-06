@@ -1,6 +1,6 @@
 {
   "name": "oban-themes",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "main": "oban-neat.less",
   "dependencies": {
     "oban": "~0.15.0"
