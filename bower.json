@@ -9,7 +9,6 @@
     "example",
     "grunt",
     "node_modules",
-    "styleguide",
     "Gruntfile.js",
     "package.json"
   ]
