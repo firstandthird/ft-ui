@@ -55,6 +55,7 @@ h6,
 .heading5,
 .heading6 {
   line-height: 1.1;
+  color: #333333;
 }
 h1,
 .heading1 {
@@ -82,14 +83,25 @@ h6,
 }
 p.intro {
   font-size: 120%;
+  line-height: 140%;
 }
 strong,
-b {
+b,
+.strong {
   font-weight: bold;
 }
 em,
 i {
   font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.link-alternate {
+  color: #4cd964;
 }
 .list-inline {
   margin: 0;
@@ -161,6 +173,9 @@ h1,
   border: 1px solid #34aadc;
   border-radius: 5px;
 }
+.btn:hover {
+  text-decoration: none;
+}
 .btn.hover,
 .btn:hover {
   color: #ffffff;
@@ -190,6 +205,9 @@ h1,
   color: #000000;
   border: 1px solid #4cd964;
   border-radius: 5px;
+}
+.btn-secondary:hover {
+  text-decoration: none;
 }
 .btn-secondary.hover,
 .btn-secondary:hover {
@@ -221,6 +239,9 @@ h1,
   border: 1px solid #999999;
   border-radius: 5px;
 }
+.btn-disabled:hover {
+  text-decoration: none;
+}
 .btn-disabled.hover,
 .btn-disabled:hover {
   color: #ffffff;
@@ -241,6 +262,9 @@ h1,
   background: transparent;
   outline: 0;
   padding: 0;
+  text-decoration: none;
+}
+.btn-reset:hover {
   text-decoration: none;
 }
 .grid12 {
