@@ -1,22 +1,20 @@
-<% if (typeof colors !== 'undefined') { %>
 <div class="sg-colors" data-code-skip>
   <table>
     <thead>
       <tr>
         <th>Color</th>
         <th>Hex</th>
-        <th>Less Variable</th>
+        <th>Name</th>
       </tr>
     </thead>
     <tbody>
-      <% colors.forEach(function(color) { %>
+      {{#colors}}
       <tr>
-        <td class="sg-swatch"></td>
-        <td class="sg-hex"><%= color.hex %></td>
-        <td><%= color.var %></td>
+        <td><div class="sg-swatch"></div></td>
+        <td class="sg-hex">{{hex}}</td>
+        <td>{{name}}</td>
       </tr>
-      <% }); %>
+      {{/colors}}
     </tbody>
   </table>
 </div>
-<% } %>
