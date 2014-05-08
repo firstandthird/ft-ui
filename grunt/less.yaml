@@ -2,6 +2,6 @@ example:
   options:
     paths:
       - bower_components/oban
-  src:
-    - oban-neat.less
-  dest: example/neat.css
+  files:
+    - 'example/neat.css': 'oban-neat.less'
+    - 'example/styleguide.css': 'example/styleguide.less'

@@ -2,6 +2,9 @@ neat:
   options:
     data:
       projectTitle: Oban Neat
-      cssFile: neat.css
+      cssFiles: 
+        - styleguide.css
+        - neat.css
+      lessFile: lib/default-vars.less
   src: styleguide
   dest: example/index.html

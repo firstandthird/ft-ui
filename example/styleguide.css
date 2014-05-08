@@ -1,0 +1,7 @@
+.grid12 {
+  margin-bottom: 20px;
+}
+.grid12 .column4 div {
+  background: #ccc;
+  text-align: center;
+}

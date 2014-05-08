@@ -1,6 +1,7 @@
 css:
   files:
     - oban-neat.less
+    - example/styleguide.less
     - lib/*.less
   tasks:
     - css
@@ -23,4 +24,4 @@ build:
   tasks:
     - default
   options:
-    reloat: true
+    reload: true
