@@ -365,3 +365,50 @@ h1,
 .grid12.grid-pad {
   padding: 20px;
 }
+.show-tiny,
+.show-small,
+.show-medium,
+.show-large {
+  display: none !important;
+}
+@media (max-width: 768px) {
+  .show-tiny {
+    display: block !important;
+  }
+  .hide-tiny {
+    display: none !important;
+  }
+  .grid-stacked-tiny [class*=column] {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .show-small {
+    display: block !important;
+  }
+  .hide-small {
+    display: none !important;
+  }
+  .grid-stacked-small [class*=column] {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .show-medium {
+    display: block !important;
+  }
+  .hide-medium {
+    display: none !important;
+  }
+  .grid-stacked-medium [class*=column] {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .show-large {
+    display: block !important;
+  }
+  .hide-large {
+    display: none !important;
+  }
+}
