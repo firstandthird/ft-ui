@@ -8,6 +8,7 @@ css:
 styleguide:
   files:
     - styleguide/**/*
+    - lib/default-vars.less
     - node_modules/grunt-styles/tasks/styles.js
   tasks:
     - styles
