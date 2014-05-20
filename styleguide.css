@@ -1,0 +1,23 @@
+.grid12 {
+  margin-bottom: 20px;
+}
+.grid12 .column4 div {
+  background: #ccc;
+  text-align: center;
+}
+.sg-mobile .block {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+}
+.sg-mobile .block span {
+  display: block;
+  padding: 10px;
+}
+.sg-mobile .visible [class*=show],
+.sg-mobile .hidden [class*=hide] {
+  color: #3d6c2a;
+  background: #dff0d8;
+}
