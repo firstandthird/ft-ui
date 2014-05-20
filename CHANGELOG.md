@@ -1,4 +1,12 @@
 
+0.1.1 / 2014-05-20 
+==================
+
+  * renamed screen variables
+  * reorganized responsive
+  * updated readme
+  * grunt task to build gh-pages
+
 0.1.0 / 2014-05-20 
 ==================
 
