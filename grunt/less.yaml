@@ -3,5 +3,5 @@ example:
     paths:
       - bower_components/oban
   files:
-    - 'example/neat.css': 'oban-neat.less'
+    - 'example/ft-ui.css': 'ft-ui.less'
     - 'example/styleguide.css': 'example/styleguide.less'

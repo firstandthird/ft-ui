@@ -1,6 +1,6 @@
 css:
   files:
-    - oban-neat.less
+    - ft-ui.less
     - example/styleguide.less
     - lib/*.less
   tasks:

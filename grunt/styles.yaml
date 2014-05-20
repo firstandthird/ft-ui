@@ -1,10 +1,10 @@
-neat:
+ui:
   options:
     data:
-      projectTitle: Oban Neat
+      projectTitle: F+T UI
       cssFiles: 
         - styleguide.css
-        - neat.css
+        - ft-ui.css
       lessFile: lib/default-vars.less
   src: styleguide
   dest: example/index.html
