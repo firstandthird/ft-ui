@@ -7,3 +7,5 @@ dev:
   - default
   - connect
   - watch
+site:
+  - gh-pages

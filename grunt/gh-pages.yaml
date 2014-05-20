@@ -1,0 +1,4 @@
+ghpage:
+  options:
+    base: 'example'
+  src: '**/*'
