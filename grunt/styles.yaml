@@ -6,5 +6,6 @@ ui:
         - styleguide.css
         - ft-ui.css
       lessFile: lib/default-vars.less
+      varFile: lib/default-vars.less
   src: styleguide
   dest: example/index.html
