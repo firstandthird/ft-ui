@@ -5,19 +5,19 @@
   background: #ccc;
   text-align: center;
 }
-.sg-mobile .block {
+.sg-responsive > div:first-child [class*=show],
+.sg-responsive > div:last-child [class*=hide] {
+  color: #3d6c2a;
+  background: #dff0d8;
+}
+.sg-responsive > div > div {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 200px;
   text-align: center;
   margin: 10px 0;
 }
-.sg-mobile .block span {
+.sg-responsive > div > div span {
   display: block;
   padding: 10px;
-}
-.sg-mobile .visible [class*=show],
-.sg-mobile .hidden [class*=hide] {
-  color: #3d6c2a;
-  background: #dff0d8;
 }
