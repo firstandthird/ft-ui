@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "main": "ft-ui.less",
   "dependencies": {
-    "oban": "~0.15.0"
+    "oban": "~0.16.0"
   },
   "ignore": [
     "example",
