@@ -1,4 +1,14 @@
 
+0.1.0 / 2014-05-20 
+==================
+
+  * updated oban to 0.16.0
+  * added responsive helpers
+  * added support for @font-heading
+  * updated grunt-styles, added display of vars
+  * [buttons] added .btn--large
+  * renamed to ft-ui
+
 0.0.2 / 2014-05-08 
 ==================
 
