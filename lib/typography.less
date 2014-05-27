@@ -1,3 +1,7 @@
+.setup-google-font(@font) when (isstring(@font)) {
+  .oban-google-font(@font, @google-font-weights);
+}
+.setup-google-font(@google-font);
 body {
   font-family: @font-primary;
   font-weight: @font-primary-weight;
