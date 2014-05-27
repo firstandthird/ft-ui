@@ -1,7 +1,7 @@
 css:
   - less
 default:
-  - styles
+  - ui-guide
   - css
 dev:
   - default
