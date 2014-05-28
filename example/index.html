@@ -35,7 +35,7 @@
       </tr>
       <tr>
         <td><div class="sg-swatch"></div></td>
-        <td class="sg-hex">#4cd964</td>
+        <td class="sg-hex">#ff2d55</td>
         <td>@color-accent2</td>
       </tr>
       <tr>
@@ -53,6 +53,11 @@
         <td class="sg-hex">#999999</td>
         <td>@color-subtle</td>
       </tr>
+      <tr>
+        <td><div class="sg-swatch"></div></td>
+        <td class="sg-hex">#ffffff</td>
+        <td>@color-background</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -62,16 +67,21 @@
   <pre><code>
 //colors
 @color-accent1: #34AADC;
-@color-accent2: #4CD964;
+@color-accent2: #FF2D55;
 @color-heading: #333;
 @color-body: #444;
 @color-link: @color-accent1;
 @color-subtle: #999;
+@color-background: #fff;
 
 //typography
+@google-font: false;
+@google-font-weights: '300', '400', '700';
 @font-primary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-primary-weight: 400;
 @font-secondary: Georgia, serif;
 @font-heading: @font-primary;
+@font-heading-weight: 700;
 @font-lineheight: 140%;
 
 //sizes
@@ -241,7 +251,7 @@
       <h3 id="file-02-responsive-helpers" class="sg-h3">Responsive Helpers</h3>
       <div><div class="sg-responsive">
   <div>
-    <h2>Visible</h2>
+    <h3>Visible</h3>
     <div>
       <span class="show-tiny">Visible on Tiny</span>
       <span class="hide-tiny">Tiny</span>
@@ -260,7 +270,7 @@
     </div>
   </div>
   <div>
-    <h2>Hidden</h2>
+    <h3>Hidden</h3>
     <div>
       <span class="show-tiny">Tiny</span>
       <span class="hide-tiny">Hidden on Tiny</span>
@@ -290,26 +300,27 @@
 </div>
       <h3 id="file-04-responsive-grid" class="sg-h3">Responsive Grid</h3>
       <div><div class="grid">
-  <h1>Grid</h1>
-  <h2>Stacked Tiny</h2>
+  <h2>Grid</h2>
+  <p>You turn grid columns into stacked, by adding a grid-stacked-{size} class to the grid element. For example, if you have grid-stacked-tiny and the width of the page is less than @screen-tiny-max, it will collapse.</p>
+  <h3>Stacked Tiny</h3>
   <div class="grid12 grid-stacked-tiny">
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
   </div>
-  <h2>Stacked Small</h2>
+  <h3>Stacked Small</h3>
   <div class="grid12 grid-stacked-small">
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
   </div>
-  <h2>Stacked Medium</h2>
+  <h3>Stacked Medium</h3>
   <div class="grid12 grid-stacked-medium">
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>
   </div>
-  <h2>Stacked Tiny and Small</h2>
+  <h3>Stacked Tiny and Small</h3>
   <div class="grid12 grid-stacked-tiny grid-stacked-small">
     <div class="column4"><div class="name">4</div></div>
     <div class="column4"><div class="name">4</div></div>

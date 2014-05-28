@@ -1,4 +1,17 @@
 
+0.2.0 / 2014-05-27 
+==================
+
+  * documentation for responsive grid
+  * updated headings on responsive helpers
+  * variable for background color
+  * changed default accent2 color
+  * added @google-font support
+  * added font weight variables
+  * updated oban
+  * updated to use ui-guide
+  * updated grunt-styles
+
 0.1.1 / 2014-05-20 
 ==================
 
