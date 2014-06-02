@@ -1,4 +1,10 @@
 
+0.2.1 / 2014-06-02 
+==================
+
+  * moved files into a 00-core page directory
+  * updated ui-guide
+
 0.2.0 / 2014-05-27 
 ==================
 
