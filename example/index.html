@@ -81,6 +81,12 @@
                           <td>@color-background</td>
                         </tr>
                         
+                        <tr>
+                          <td><div class="sg-swatch"></div></td>
+                          <td class="sg-hex">#cf5f5f</td>
+                          <td>@color-required</td>
+                        </tr>
+                        
                       </tbody>
                     </table>
                   </div>
@@ -98,6 +104,9 @@
 @color-link: @color-accent1;
 @color-subtle: #999;
 @color-background: #fff;
+@color-required: #cf5f5f;
+@color-input: @color-subtle;
+@color-input-active: @color-accent1;
 
 //typography
 @google-font: false;
@@ -713,6 +722,379 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+                    </div>
+                  
+                </div>
+              
+            
+              <h2 id="00-core-04-form" class="sg-h2">Form</h2>
+              
+                <div class="sg-clearfix">
+                  <h3 id="00-core-04-form-00-inputs" class="sg-h3">Inputs</h3>
+                  <div class="sg-showcode">
+                    <p class="sg-docs"></p>
+                    <form class="form">
+  <fieldset>
+    <p class="heading2">Section 1 Header</p>
+    <p>Copy for Section</p>
+
+    <div>
+      <label for="text" class="form--label">Some text</label>
+      <input type="text" id="text" class="form--input" value="Lorem ipsum"/>
+    </div>
+
+    <div class="form--error">
+      <label for="error" class="form--label form--required">Error</label>
+      <input type="text" id="error" class="form--input" value="Lorem ipsum"/>
+      <small class="form--description">Please enter some correct text</small>
+    </div>
+
+    <div>
+      <label for="password" class="form--label form--required">Password</label>
+      <input type="password" id="password" class="form--input" placeholder="password"/>
+    </div>
+
+    <div>
+      <label for="email" class="form--label">Email</label>
+      <input type="email" id="email" class="form--input" value="email@localhost"/>
+    </div>
+
+    <div>
+      <label for="search" class="form--label">Search</label>
+      <input type="search" id="search" class="form--input" placeholder="Search"/>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <p class="heading2">Section 2 Header</p>
+
+    <div>
+      <label for="url" class="form--label">Url</label>
+      <input type="url" id="url" class="form--input" placeholder="Website"/>
+      <small class="form--description">Your website</small>
+    </div>
+
+    <div>
+      <label for="phone" class="form--label">Phone</label>
+      <input type="tel" id="phone" class="form--input" placeholder="+1 (555) 555-5555"/>
+    </div>
+
+    <div>
+      <label for="count" class="form--label">Count</label>
+      <input type="number" id="count" class="form--input" placeholder="How many?"/>
+    </div>
+
+    <div>
+      <label for="range" class="form--label">Percent Done</label>
+      <input type="range" id="range" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="date" class="form--label">Birthday</label>
+      <input type="date" id="date" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="month" class="form--label">Expires</label>
+      <input type="month" id="month" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="week" class="form--label">Week off</label>
+      <input type="week" id="week" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="time" class="form--label">Alarm Time</label>
+      <input type="time" id="time" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="color" class="form--label">Favorite Color</label>
+      <input type="color" id="color" class="form--input"/>
+    </div>
+
+    <div>
+      <label for="bio" class="form--label">Bio</label>
+      <textarea id="bio" class="form--input"></textarea>
+      <small class="form--description">Description please</small>
+    </div>
+  </fieldset>
+</form>
+
+<form class="form form--large">
+  <fieldset>
+    <p class="heading2">Large Form</p>
+    <p>These inputs are massive</p>
+    <div>
+      <label for="larger" class="form--label">Large input</label>
+      <input type="text" id="larger" class="form--input" value="Somewhat Bigger"/>
+      <small class="form--description">Put some text up there</small>
+    </div>
+  </fieldset>
+</form>
+                  </div>
+                  
+                    <div class="sg-codeblock">
+                      <pre><code class="language-markup">&lt;form class=&quot;form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;p class=&quot;heading2&quot;&gt;Section 1 Header&lt;/p&gt;
+    &lt;p&gt;Copy for Section&lt;/p&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;text&quot; class=&quot;form--label&quot;&gt;Some text&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;text&quot; class=&quot;form--input&quot; value=&quot;Lorem ipsum&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form--error&quot;&gt;
+      &lt;label for=&quot;error&quot; class=&quot;form--label form--required&quot;&gt;Error&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;error&quot; class=&quot;form--input&quot; value=&quot;Lorem ipsum&quot;/&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Please enter some correct text&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;password&quot; class=&quot;form--label form--required&quot;&gt;Password&lt;/label&gt;
+      &lt;input type=&quot;password&quot; id=&quot;password&quot; class=&quot;form--input&quot; placeholder=&quot;password&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;email&quot; class=&quot;form--label&quot;&gt;Email&lt;/label&gt;
+      &lt;input type=&quot;email&quot; id=&quot;email&quot; class=&quot;form--input&quot; value=&quot;email@localhost&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;search&quot; class=&quot;form--label&quot;&gt;Search&lt;/label&gt;
+      &lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;form--input&quot; placeholder=&quot;Search&quot;/&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+
+  &lt;fieldset&gt;
+    &lt;p class=&quot;heading2&quot;&gt;Section 2 Header&lt;/p&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;url&quot; class=&quot;form--label&quot;&gt;Url&lt;/label&gt;
+      &lt;input type=&quot;url&quot; id=&quot;url&quot; class=&quot;form--input&quot; placeholder=&quot;Website&quot;/&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Your website&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;phone&quot; class=&quot;form--label&quot;&gt;Phone&lt;/label&gt;
+      &lt;input type=&quot;tel&quot; id=&quot;phone&quot; class=&quot;form--input&quot; placeholder=&quot;+1 (555) 555-5555&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;count&quot; class=&quot;form--label&quot;&gt;Count&lt;/label&gt;
+      &lt;input type=&quot;number&quot; id=&quot;count&quot; class=&quot;form--input&quot; placeholder=&quot;How many?&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;range&quot; class=&quot;form--label&quot;&gt;Percent Done&lt;/label&gt;
+      &lt;input type=&quot;range&quot; id=&quot;range&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;date&quot; class=&quot;form--label&quot;&gt;Birthday&lt;/label&gt;
+      &lt;input type=&quot;date&quot; id=&quot;date&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;month&quot; class=&quot;form--label&quot;&gt;Expires&lt;/label&gt;
+      &lt;input type=&quot;month&quot; id=&quot;month&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;week&quot; class=&quot;form--label&quot;&gt;Week off&lt;/label&gt;
+      &lt;input type=&quot;week&quot; id=&quot;week&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;time&quot; class=&quot;form--label&quot;&gt;Alarm Time&lt;/label&gt;
+      &lt;input type=&quot;time&quot; id=&quot;time&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;color&quot; class=&quot;form--label&quot;&gt;Favorite Color&lt;/label&gt;
+      &lt;input type=&quot;color&quot; id=&quot;color&quot; class=&quot;form--input&quot;/&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;bio&quot; class=&quot;form--label&quot;&gt;Bio&lt;/label&gt;
+      &lt;textarea id=&quot;bio&quot; class=&quot;form--input&quot;&gt;&lt;/textarea&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;form class=&quot;form form--large&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;p class=&quot;heading2&quot;&gt;Large Form&lt;/p&gt;
+    &lt;p&gt;These inputs are massive&lt;/p&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;larger&quot; class=&quot;form--label&quot;&gt;Large input&lt;/label&gt;
+      &lt;input type=&quot;text&quot; id=&quot;larger&quot; class=&quot;form--input&quot; value=&quot;Somewhat Bigger&quot;/&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Put some text up there&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+                    </div>
+                  
+                </div>
+              
+                <div class="sg-clearfix">
+                  <h3 id="00-core-04-form-01-select" class="sg-h3">Select</h3>
+                  <div class="sg-showcode">
+                    <p class="sg-docs"></p>
+                    <form class="form">
+  <fieldset>
+    <p class="heading2">Section 1 Header</p>
+    <p>Copy for Section</p>
+
+    <div>
+      <input id="radio1" type="radio" name="radio"/>
+      <label for="radio1">Radio</label>
+      <small class="form--description">Description please</small>
+    </div>
+    <div>
+      <input id="radio2" type="radio" name="radio"/>
+      <label for="radio2">Radio</label>
+      <small class="form--description">Description please</small>
+    </div>
+
+    <div>
+      <input id="radio1" type="radio" name="radio" class="form--large"/>
+      <label for="radio1" class="form--large">Radio</label>
+      <small class="form--description">Description please</small>
+    </div>
+    <div>
+      <input id="radio2" type="radio" name="radio" class="form--large"/>
+      <label for="radio2" class="form--large">Radio</label>
+      <small class="form--description">Description please</small>
+    </div>
+
+    <div>
+      <input id="cbx" type="checkbox"/>
+      <label for="cbx">This is a checkbox</label>
+      <small class="form--description">Description please</small>
+    </div>
+    <div>
+      <input id="cbx" type="checkbox"/>
+      <label for="cbx">This is a checkbox</label>
+      <small class="form--description">Description please</small>
+    </div>
+
+    <div>
+      <input id="cbx" type="checkbox" class="form--large"/>
+      <label for="cbx" class="form--large">This is a checkbox</label>
+      <small class="form--description">Description please</small>
+    </div>
+    <div>
+      <input id="cbx" type="checkbox" class="form--large"/>
+      <label for="cbx" class="form--large">This is a checkbox</label>
+      <small class="form--description">Description please</small>
+    </div>
+
+    <div>
+      <label for="multiple" class="form--label">Multiple</label>
+      <select id="multiple" class="form--input" multiple>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+      </select>
+      <small class="form--description">Description please</small>
+    </div>
+
+    <div>
+      <label for="dropdown" class="form--label">Dropdown</label>
+      <select id="dropdown" class="form--dropdown">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+        <option>Option 5</option>
+      </select>
+      <small class="form--description">Description please</small>
+    </div>
+  </fieldset>
+</form>
+                  </div>
+                  
+                    <div class="sg-codeblock">
+                      <pre><code class="language-markup">&lt;form class=&quot;form&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;p class=&quot;heading2&quot;&gt;Section 1 Header&lt;/p&gt;
+    &lt;p&gt;Copy for Section&lt;/p&gt;
+
+    &lt;div&gt;
+      &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;label for=&quot;radio1&quot;&gt;Radio&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;label for=&quot;radio2&quot;&gt;Radio&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;radio&quot; class=&quot;form--large&quot;/&gt;
+      &lt;label for=&quot;radio1&quot; class=&quot;form--large&quot;&gt;Radio&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;radio&quot; class=&quot;form--large&quot;/&gt;
+      &lt;label for=&quot;radio2&quot; class=&quot;form--large&quot;&gt;Radio&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;input id=&quot;cbx&quot; type=&quot;checkbox&quot;/&gt;
+      &lt;label for=&quot;cbx&quot;&gt;This is a checkbox&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input id=&quot;cbx&quot; type=&quot;checkbox&quot;/&gt;
+      &lt;label for=&quot;cbx&quot;&gt;This is a checkbox&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;input id=&quot;cbx&quot; type=&quot;checkbox&quot; class=&quot;form--large&quot;/&gt;
+      &lt;label for=&quot;cbx&quot; class=&quot;form--large&quot;&gt;This is a checkbox&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;input id=&quot;cbx&quot; type=&quot;checkbox&quot; class=&quot;form--large&quot;/&gt;
+      &lt;label for=&quot;cbx&quot; class=&quot;form--large&quot;&gt;This is a checkbox&lt;/label&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;multiple&quot; class=&quot;form--label&quot;&gt;Multiple&lt;/label&gt;
+      &lt;select id=&quot;multiple&quot; class=&quot;form--input&quot; multiple&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;option&gt;Option 3&lt;/option&gt;
+        &lt;option&gt;Option 4&lt;/option&gt;
+        &lt;option&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;dropdown&quot; class=&quot;form--label&quot;&gt;Dropdown&lt;/label&gt;
+      &lt;select id=&quot;dropdown&quot; class=&quot;form--dropdown&quot;&gt;
+        &lt;option&gt;Option 1&lt;/option&gt;
+        &lt;option&gt;Option 2&lt;/option&gt;
+        &lt;option&gt;Option 3&lt;/option&gt;
+        &lt;option&gt;Option 4&lt;/option&gt;
+        &lt;option&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;small class=&quot;form--description&quot;&gt;Description please&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
                     </div>
                   
                 </div>

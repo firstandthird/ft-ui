@@ -1,12 +1,25 @@
-fieldset {
-  border: 0;
-  padding: @spacing-small 0;
-  margin: 0;
-}
-
 .form {
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    .spacing-medium();
+
+    &>div {
+      .spacing-small();
+    }
+  }
+
   &--label {
     display: block;
+    .heading5();
+    margin-bottom: floor(@spacing-small / 2);
+  }
+
+  &--label&--required:after {
+      content: ' *';
+      color: @color-required;
+    }
   }
 
   &--input {
@@ -15,27 +28,18 @@ fieldset {
     padding: @spacing-small;
     margin: 0;
     outline: none;
+    border-radius: 3px;
 
     &:focus {
       border-color: @color-input-active;
     }
   }
 
-  input[type="color"]&--input {
+  &--input[type="color"] {
     padding: 0 2px;
     height: 40px;
     width: 80px;
     cursor: pointer;
-  }
-
-  input&--invalid {
-    border-color: @color-required;
-  }
-
-  &--error {
-    display: block;
-    font-style: italic;
-    color: @color-required;
   }
 
   &--description {
@@ -43,24 +47,27 @@ fieldset {
     font-style: italic;
   }
 
-  label&--large {
+  &--large &--label {
     font-size: 24px;
     margin-bottom: @spacing-small;
   }
 
-  input&--large {
+  &--large &--input {
     padding: @spacing-medium;
     font-size: 24px;
   }
 
-  label&--required {
-    &:after {
-      content: ' *';
-      color: @color-required;
-    }
+  &--large &--description {
+    font-size: 16px;
   }
 
-  small&--large {
-    font-size: 16px;
+  &--error &--description {
+    display: block;
+    font-style: italic;
+    color: @color-required;
+  }
+
+  &--error &--input {
+    border-color: @color-required;
   }
 }

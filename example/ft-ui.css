@@ -275,6 +275,68 @@ h1,
 .btn-reset:hover {
   text-decoration: none;
 }
+.form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.form fieldset > div {
+  margin-bottom: 10px;
+}
+.form--label {
+  display: block;
+  line-height: 1.1;
+  color: #333333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.form--label.form--required:after {
+  content: ' *';
+  color: #cf5f5f;
+}
+.form--input {
+  width: 80%;
+  border: 1px solid #999999;
+  padding: 10px;
+  margin: 0;
+  outline: none;
+  border-radius: 3px;
+}
+.form--input:focus {
+  border-color: #34aadc;
+}
+.form--input[type="color"] {
+  padding: 0 2px;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+}
+.form--description {
+  display: block;
+  font-style: italic;
+}
+.form--large label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.form--large input {
+  padding: 20px;
+  font-size: 24px;
+}
+.form--large small {
+  font-size: 16px;
+}
+.form--error .form--description {
+  display: block;
+  font-style: italic;
+  color: #cf5f5f;
+}
+.form--error .form--input {
+  border-color: #cf5f5f;
+}
 .grid12 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
