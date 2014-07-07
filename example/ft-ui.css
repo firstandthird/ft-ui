@@ -282,6 +282,9 @@ h1,
   margin-bottom: 20px;
 }
 .form fieldset > div {
+  margin-bottom: 20px;
+}
+.form p {
   margin-bottom: 10px;
 }
 .form--label {
@@ -317,17 +320,13 @@ h1,
 .form--description {
   display: block;
   font-style: italic;
-}
-.form--large .form--label {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 100%;
+  margin-top: 5px;
 }
 .form--large .form--input {
   padding: 20px;
   font-size: 24px;
-}
-.form--large .form--description {
-  font-size: 16px;
 }
 .form--error .form--description {
   display: block;
