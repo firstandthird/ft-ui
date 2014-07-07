@@ -318,15 +318,15 @@ h1,
   display: block;
   font-style: italic;
 }
-.form--large label {
+.form--large .form--label {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.form--large input {
+.form--large .form--input {
   padding: 20px;
   font-size: 24px;
 }
-.form--large small {
+.form--large .form--description {
   font-size: 16px;
 }
 .form--error .form--description {
