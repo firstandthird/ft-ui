@@ -6,8 +6,12 @@
     .spacing-medium();
 
     &>div {
-      .spacing-small();
+      .spacing-medium();
     }
+  }
+
+  p {
+    margin-bottom: @spacing-small;
   }
 
   &--label {
@@ -44,20 +48,14 @@
   &--description {
     display: block;
     font-style: italic;
-  }
-
-  &--large &--label {
-    font-size: 24px;
-    margin-bottom: @spacing-small;
+    font-size: @size-body - 4px;
+    line-height: 100%;
+    margin-top: floor(@spacing-small / 2);
   }
 
   &--large &--input {
     padding: @spacing-medium;
     font-size: 24px;
-  }
-
-  &--large &--description {
-    font-size: 16px;
   }
 
   &--error &--description {
