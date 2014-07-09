@@ -1,4 +1,14 @@
 
+0.4.0 / 2014-07-09 
+==================
+
+  * example for content-block
+  * tweaks for form style
+  * updated deps
+  * renamed @size-body and @size-small to @font-size-body and @font-size-small
+  * added @size-small and changed small tag to use that
+  * Use .content-block for spacing on h tags and p tags
+
 0.3.0 / 2014-07-07 
 ==================
 

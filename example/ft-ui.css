@@ -107,6 +107,9 @@ a:hover {
 .link-alternate {
   color: #ff2d55;
 }
+small {
+  font-size: 14px;
+}
 .list-inline {
   margin: 0;
   padding: 0;
@@ -142,18 +145,18 @@ a:hover {
 .spacing-none {
   margin-bottom: 0px;
 }
-h4,
-h5,
+.content-block h4,
+.content-block h5,
 .spacing-small {
   margin-bottom: 10px;
 }
-h2,
-h3,
-p,
+.content-block h2,
+.content-block h3,
+.content-block p,
 .spacing-medium {
   margin-bottom: 20px;
 }
-h1,
+.content-block h1,
 .spacing-large {
   margin-bottom: 40px;
 }
@@ -279,13 +282,13 @@ h1,
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .form fieldset > div {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .form p {
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .form--label {
   display: block;
@@ -302,6 +305,8 @@ h1,
 }
 .form--input {
   width: 80%;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   border: 1px solid #999999;
   padding: 10px;
   margin: 0;
@@ -320,12 +325,12 @@ h1,
 .form--description {
   display: block;
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
   margin-top: 5px;
 }
 .form--large .form--input {
-  padding: 20px;
+  padding: 15px;
   font-size: 24px;
 }
 .form--error .form--description {
