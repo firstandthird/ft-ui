@@ -3,15 +3,14 @@
     border: 0;
     padding: 0;
     margin: 0;
-    .spacing-medium();
+    .spacing-large();
 
-    &>div {
-      .spacing-medium();
+    & > div {
+      margin-top: @spacing-medium;
     }
   }
-
   p {
-    margin-bottom: @spacing-small;
+    margin-top: @spacing-small;
   }
 
   &--label {
@@ -27,6 +26,8 @@
 
   &--input {
     width: 80%;
+    font-size: @font-size-body;
+    font-family: @font-primary;
     border: 1px solid @color-input;
     padding: @spacing-small;
     margin: 0;
@@ -48,13 +49,13 @@
   &--description {
     display: block;
     font-style: italic;
-    font-size: @size-body - 4px;
+    font-size: @font-size-small;
     line-height: 100%;
     margin-top: floor(@spacing-small / 2);
   }
 
   &--large &--input {
-    padding: @spacing-medium;
+    padding: 15px;
     font-size: 24px;
   }
 
