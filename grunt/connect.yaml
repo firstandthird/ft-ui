@@ -1,4 +1,4 @@
 example:
   options:
     base: example/
-    livereload: true
+    livereload: <%= livereloadPort %>

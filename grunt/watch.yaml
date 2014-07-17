@@ -16,7 +16,7 @@ example:
   files:
     - example/*
   options:
-    livereload: true
+    livereload: <%= livereloadPort %>
 build:
   files:
     - grunt/*
