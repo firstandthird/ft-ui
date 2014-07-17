@@ -87,6 +87,30 @@
                           <td>@color-required</td>
                         </tr>
                         
+                        <tr>
+                          <td><div class="sg-swatch"></div></td>
+                          <td class="sg-hex">#f0ad4e</td>
+                          <td>@color-warning</td>
+                        </tr>
+                        
+                        <tr>
+                          <td><div class="sg-swatch"></div></td>
+                          <td class="sg-hex">#d9534f</td>
+                          <td>@color-error</td>
+                        </tr>
+                        
+                        <tr>
+                          <td><div class="sg-swatch"></div></td>
+                          <td class="sg-hex">#5cb85c</td>
+                          <td>@color-success</td>
+                        </tr>
+                        
+                        <tr>
+                          <td><div class="sg-swatch"></div></td>
+                          <td class="sg-hex">#428bca</td>
+                          <td>@color-progress</td>
+                        </tr>
+                        
                       </tbody>
                     </table>
                   </div>
@@ -107,6 +131,12 @@
 @color-required: #cf5f5f;
 @color-input: @color-subtle;
 @color-input-active: @color-accent1;
+
+//errors
+@color-warning: #f0ad4e;
+@color-error: #d9534f;
+@color-success: #5cb85c;
+@color-progress: #428bca;
 
 //typography
 @google-font: false;
@@ -136,6 +166,7 @@
 @screen-tiny-max: 768px;
 @screen-small-max: 991px;
 @screen-medium-max: 1199px;
+
 </code></pre>
                   </div>
                 </div>
@@ -605,6 +636,10 @@
 <p><button type="button" class="btn-secondary">This is a secondary button</button></p>
 <p><a href="#" class="btn">This is a link button</a></p>
 <p><button type="button" class="btn-disabled">This is a disabled button</button></p>
+<p><button type="button" class="btn-progress">This is a progress button</button></p>
+<p><button type="button" class="btn-invalid">This is a invalid button</button></p>
+<p><button type="button" class="btn-error">This is a error button</button></p>
+<p><button type="button" class="btn-success">This is a success button</button></p>
 <p><button type="button" class="btn-reset">This is an unstyled button</button></p>
 
                   </div>
@@ -621,6 +656,10 @@
 &lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-secondary&quot;&gt;This is a secondary button&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;This is a link button&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-disabled&quot;&gt;This is a disabled button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-progress&quot;&gt;This is a progress button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-invalid&quot;&gt;This is a invalid button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-error&quot;&gt;This is a error button&lt;/button&gt;&lt;/p&gt;
+&lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-success&quot;&gt;This is a success button&lt;/button&gt;&lt;/p&gt;
 &lt;p&gt;&lt;button type=&quot;button&quot; class=&quot;btn-reset&quot;&gt;This is an unstyled button&lt;/button&gt;&lt;/p&gt;
 </code></pre>
                       </div>
