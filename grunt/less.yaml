@@ -1,5 +1,6 @@
 example:
   options:
+    relativeUrls: true
     paths:
       - bower_components/oban
   files:
