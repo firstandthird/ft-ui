@@ -1,4 +1,10 @@
 
+0.6.0 / 2014-07-23 
+==================
+
+  * find next available port for connect
+  * removed btn-success,progress,error, added icons.less
+
 0.5.1 / 2014-07-20 
 ==================
 

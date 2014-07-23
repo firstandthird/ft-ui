@@ -196,6 +196,9 @@ small {
   outline: 0;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+.btn[class*=icon-]:before {
+  padding-right: 10px;
+}
 .btn--large {
   padding: 10px 12px;
   font-size: 16px;
@@ -277,159 +280,6 @@ small {
 }
 .btn-reset:hover {
   text-decoration: none;
-}
-.btn-progress {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  background-color: #428bca;
-  color: #ffffff;
-  border: 1px solid #428bca;
-  border-radius: 5px;
-  padding-left: 35px;
-  background-image: url("data:image/gif;base64,R0lGODlhEAALAPQAAP////////7+/v7+/v7+/v7+/v////7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/gAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA");
-  background-repeat: no-repeat;
-  background-position: 8px 8px;
-}
-.btn-progress:hover {
-  text-decoration: none;
-}
-.btn-progress.hover,
-.btn-progress:hover {
-  color: #ffffff;
-  background-color: #245682;
-  border: 1px solid #245682;
-}
-.btn-progress.active,
-.btn-progress:active {
-  background-color: #245682;
-  border: 1px solid #245682;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.btn-invalid {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  border: 3px solid #d9534f;
-}
-.btn-invalid:hover {
-  text-decoration: none;
-}
-.btn-invalid.hover,
-.btn-invalid:hover {
-  color: #000000;
-  background-color: #cccccc;
-  border: 1px solid #cccccc;
-}
-.btn-invalid.active,
-.btn-invalid:active {
-  background-color: #cccccc;
-  border: 1px solid #cccccc;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.btn-invalid:hover {
-  background-color: #ffffff;
-  border: 3px solid #d9534f;
-}
-.btn-invalid:before {
-  content: '\d7';
-  padding-right: 10px;
-}
-.btn-error {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  background-color: #d9534f;
-  color: #ffffff;
-  border: 1px solid #d9534f;
-  border-radius: 5px;
-}
-.btn-error:hover {
-  text-decoration: none;
-}
-.btn-error.hover,
-.btn-error:hover {
-  color: #ffffff;
-  background-color: #a02622;
-  border: 1px solid #a02622;
-}
-.btn-error.active,
-.btn-error:active {
-  background-color: #a02622;
-  border: 1px solid #a02622;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.btn-error:before {
-  content: '\d7';
-  padding-right: 10px;
-}
-.btn-success {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  background-color: #5cb85c;
-  color: #ffffff;
-  border: 1px solid #5cb85c;
-  border-radius: 5px;
-}
-.btn-success:hover {
-  text-decoration: none;
-}
-.btn-success.hover,
-.btn-success:hover {
-  color: #ffffff;
-  background-color: #357935;
-  border: 1px solid #357935;
-}
-.btn-success.active,
-.btn-success:active {
-  background-color: #357935;
-  border: 1px solid #357935;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.btn-success:before {
-  content: '\2713';
-  padding-right: 10px;
 }
 .form fieldset {
   border: 0;
@@ -633,4 +483,28 @@ small {
   .hide-large {
     display: none !important;
   }
+}
+i[class*=icon-] {
+  font-style: normal;
+}
+.icon-progress:before {
+  content: ' ';
+  display: block;
+  width: 16px;
+  height: 11px;
+  background-image: url("data:image/gif;base64,R0lGODlhEAALAPQAAP////////7+/v7+/v7+/v7+/v////7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/gAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA");
+  background-repeat: no-repeat;
+}
+.icon-success:before {
+  content: '\2713';
+}
+.icon-error:before,
+.icon-close:before {
+  content: '\d7';
+}
+.icon-arrow-right:before {
+  content: '\2039';
+}
+.icon-arrow-left:before {
+  content: '\203A';
 }

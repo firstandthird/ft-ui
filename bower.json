@@ -1,9 +1,9 @@
 {
   "name": "ft-ui",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "main": "ft-ui.less",
   "dependencies": {
-    "oban": "~0.17.0"
+    "oban": "~0.18.0"
   },
   "ignore": [
     "example",
