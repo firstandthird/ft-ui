@@ -1,5 +1,11 @@
 .btn {
   .oban-button-flat(@color-accent1);
+
+  &[class*=icon-] {
+    &:before {
+      padding-right: 10px;
+    }
+  }
 }
 
 .btn--large {
@@ -17,44 +23,4 @@
 
 .btn-reset {
   .oban-button-reset();
-}
-
-.btn-progress {
-  .oban-button-flat(@color-progress);
-  padding-left: 35px;
-  background-image: data-uri('loader.gif');
-  background-repeat: no-repeat;
-  background-position: 8px 8px;
-}
-
-.btn-invalid {
-  .oban-button-flat(
-    @bgColor: @color-background;
-  );
-  border: 3px solid @color-error;
-  &:hover {
-    background-color: @color-background;
-    border: 3px solid @color-error;
-  }
-
-  &:before {
-    content: '\d7';
-    padding-right: 10px;
-  }
-}
-
-.btn-error {
-  .oban-button-flat(@color-error);
-  &:before {
-    content: '\d7';
-    padding-right: 10px;
-  }
-}
-
-.btn-success {
-  .oban-button-flat(@color-success);
-  &:before {
-    content: '\2713';
-    padding-right: 10px;
-  }
 }

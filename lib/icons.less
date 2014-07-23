@@ -1,0 +1,35 @@
+i[class*=icon-] {
+  font-style: normal;
+}
+.icon-progress {
+  &:before {
+    content: ' ';
+    display: block;
+    width: 16px;
+    height: 11px;
+    background-image: data-uri('loader.gif');
+    background-repeat: no-repeat;
+  }
+}
+.icon-success {
+  &:before {
+    content: '\2713';
+  }
+}
+.icon-error,
+.icon-close {
+  &:before {
+    content: '\d7';
+  }
+}
+
+.icon-arrow-right {
+  &:before {
+    content: '\2039';
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: '\203A';
+  }
+}
