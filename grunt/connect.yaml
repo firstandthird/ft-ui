@@ -1,4 +1,6 @@
 example:
   options:
     base: example/
+    useAvailablePort: true
+    open: true
     livereload: <%= livereloadPort %>
