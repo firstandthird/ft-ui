@@ -41,14 +41,17 @@
 
   &--clear {
     position: relative;
-    right: 30px;
-    height: 18px;
+    right: 35px;
+    @size: 20px;
+    height: @size;
+    width: @size;
     border: none;
     border-radius: 10px;
     background: @color-subtle;
-    line-height: 11px;
+    line-height: 0;
     font-size: 12px;
     color: #fff;
+    padding: 1px 0;
 
     &:focus {
       outline: 0;
