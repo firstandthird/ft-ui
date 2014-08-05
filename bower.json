@@ -1,6 +1,6 @@
 {
   "name": "ft-ui",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "main": "ft-ui.less",
   "dependencies": {
     "oban": "~0.18.0"
