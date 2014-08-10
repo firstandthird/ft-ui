@@ -1,0 +1,51 @@
+// adapted from http://jsfiddle.net/csswizardry/M2D4M/
+.spinner {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 32px;
+  border-bottom: 1px solid;
+  vertical-align: middle;
+  overflow: hidden;
+  text-indent: 100%;
+  animation: 0.5s spinner linear infinite;
+
+  &,
+  &:after {
+    border-radius: 100%;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid;
+    opacity: 0.5;
+  }
+
+  &--small {
+    font-size: 16px;
+  }
+
+  &--large { 
+    font-size: 64px;
+  }
+
+  &--light {
+    color: #fff;
+  }
+
+  &--dark {
+    color: #333;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
