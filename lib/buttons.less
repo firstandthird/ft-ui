@@ -17,8 +17,10 @@
   .oban-button-flat(@color-accent2);
 }
 
-.btn-disabled {
-  .oban-button-flat(#999);
+.btn-disabled,
+input[disabled],
+button[disabled] {
+  .oban-button-flat(@color-disabled);
 }
 
 .btn-reset {
