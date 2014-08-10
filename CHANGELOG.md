@@ -1,4 +1,18 @@
 
+0.8.0 / 2014-08-10 
+==================
+
+  * [icons] removed progress in favor of spinner
+  * removed dynamically generated example files
+  * added spinner
+  * added autoprefixer to example
+  * updated ui-guide
+  * [buttons] added support for .button class
+  * [buttons] added examples
+  * [buttons] moved btn--large down so not overriding disabled
+  * [buttons] added btn--border
+  * [buttons] support for disabled attribute, color-disabled
+
 0.7.0 / 2014-08-05 
 ==================
 
