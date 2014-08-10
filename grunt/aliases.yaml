@@ -1,5 +1,6 @@
 css:
   - less
+  - autoprefixer
 default:
   - ui-guide
   - css
