@@ -1,4 +1,4 @@
 css:
   expand: true
-  src: 'example/*.css'
+  src: 'dist/*.css'
 
