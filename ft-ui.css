@@ -18,6 +18,7 @@ p {
   vertical-align: baseline;
 }
 * {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -104,7 +105,7 @@ a:hover {
   text-decoration: underline;
 }
 .link-alternate {
-  color: #ff2d55;
+  color: #4cd964;
 }
 small {
   font-size: 14px;
@@ -162,6 +163,25 @@ small {
 .spacing-xlarge {
   margin-bottom: 60px;
 }
+.button-link,
+.btn-link {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #34aadc;
+}
+.button-link:hover,
+.btn-link:hover {
+  text-decoration: none;
+}
+.button-link:hover,
+.btn-link:hover {
+  text-decoration: underline;
+}
 .button,
 .btn {
   cursor: pointer;
@@ -179,6 +199,8 @@ small {
   color: #ffffff;
   border: 1px solid #34aadc;
   border-radius: 5px;
+  border-color: #249ed2;
+  transition: background 0.3s ease-in;
 }
 .button:hover,
 .btn:hover {
@@ -189,24 +211,25 @@ small {
 .button:hover,
 .btn:hover {
   color: #ffffff;
-  background-color: #196d91;
-  border: 1px solid #196d91;
+  background-color: #218ebd;
+  border: 1px solid #218ebd;
 }
 .button.active,
 .btn.active,
 .button:active,
 .btn:active {
-  background-color: #196d91;
-  border: 1px solid #196d91;
+  background-color: #218ebd;
+  border: 1px solid #218ebd;
   outline: 0;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 .button[class*=icon-]:before,
-.btn[class*=icon-]:before {
-  padding-right: 10px;
+.button-border[class*=icon-]:before,
+.button-link[class*=icon-]:before {
+  padding-right: 5px;
 }
-.button-seconday,
-.btn-secondary {
+.button-border,
+.btn-border {
   cursor: pointer;
   display: inline-block;
   border: 0;
@@ -218,115 +241,75 @@ small {
   line-height: 20px;
   padding: 4px 12px;
   text-align: center;
-  background-color: #ff2d55;
-  color: #ffffff;
-  border: 1px solid #ff2d55;
+  border: 1px solid #34aadc;
   border-radius: 5px;
+  color: #444444;
+  transition: border-color 0.3s ease-in;
 }
-.button-seconday:hover,
-.btn-secondary:hover {
+.button-border:hover,
+.btn-border:hover {
   text-decoration: none;
 }
-.button-seconday.hover,
-.btn-secondary.hover,
-.button-seconday:hover,
-.btn-secondary:hover {
-  color: #ffffff;
-  background-color: #c60026;
-  border: 1px solid #c60026;
+.button-border:active,
+.btn-border:active,
+.button-border:hover,
+.btn-border:hover {
+  color: #444444;
 }
-.button-seconday.active,
-.btn-secondary.active,
-.button-seconday:active,
-.btn-secondary:active {
-  background-color: #c60026;
-  border: 1px solid #c60026;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+.button-border:hover,
+.btn-border:hover {
+  border-color: #196d91;
 }
-.button-disabled,
-.btn-disabled,
+.button-border:active,
+.btn-border:active {
+  border-color: #114c66;
+}
+.button--secondary.button {
+  background-color: #4cd964;
+  border-color: #37d552;
+}
+.button--secondary.button:hover {
+  background-color: #2ac845;
+}
+.button--secondary.button:active {
+  background-color: #197328;
+}
+.button--secondary.button-border {
+  border-color: #4cd964;
+}
+.button--secondary.button-border:hover {
+  border-color: #219e37;
+}
+.button--secondary.button-border:active {
+  border-color: #197328;
+}
+.button--secondary.button-link {
+  color: #4cd964;
+}
+.button--disabled,
+.btn--disabled,
 input[disabled],
 button[disabled] {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  background-color: #999999;
-  color: #ffffff;
-  border: 1px solid #999999;
-  border-radius: 5px;
-}
-.button-disabled:hover,
-.btn-disabled:hover,
-input[disabled]:hover,
-button[disabled]:hover {
-  text-decoration: none;
-}
-.button-disabled.hover,
-.btn-disabled.hover,
-input[disabled].hover,
-button[disabled].hover,
-.button-disabled:hover,
-.btn-disabled:hover,
-input[disabled]:hover,
-button[disabled]:hover {
-  color: #ffffff;
-  background-color: #666666;
-  border: 1px solid #666666;
-}
-.button-disabled.active,
-.btn-disabled.active,
-input[disabled].active,
-button[disabled].active,
-.button-disabled:active,
-.btn-disabled:active,
-input[disabled]:active,
-button[disabled]:active {
-  background-color: #666666;
-  border: 1px solid #666666;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-.button-reset,
-.btn-reset {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-}
-.button-reset:hover,
-.btn-reset:hover {
-  text-decoration: none;
+  opacity: .5;
+  cursor: not-allowed;
 }
 .button--large,
 .btn--large {
-  padding: 10px 12px;
+  padding: 10px 15px;
   font-size: 16px;
 }
-.button-border,
-.btn--border {
-  border-width: 3px;
-  background: transparent;
-  color: #444444;
+.button--large.button-link,
+.btn--large.button-link {
+  padding-left: 0;
 }
-.button-border:active,
-.btn--border:active,
-.button-border:hover,
-.btn--border:hover {
-  border-width: 3px;
-  background: transparent;
-  color: #444444;
+.button--small,
+.btn--small {
+  padding: 2px 6px;
+  font-size: 12px;
+}
+.button--block {
+  display: block;
+  width: 100%;
 }
 .form fieldset {
   border: 0;
@@ -408,6 +391,7 @@ button[disabled]:active {
   border-color: #cf5f5f;
 }
 .grid12 {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin-left: -20px;
@@ -419,6 +403,7 @@ button[disabled]:active {
 }
 .grid12 [class*=column] {
   float: left;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0 0 0 20px;
@@ -571,8 +556,7 @@ i[class*=icon-] {
   vertical-align: middle;
   overflow: hidden;
   text-indent: 100%;
-  -webkit-animation: 0.5s spinner linear infinite;
-          animation: 0.5s spinner linear infinite;
+  animation: 0.5s spinner linear infinite;
 }
 .spinner,
 .spinner:after {
@@ -600,15 +584,8 @@ i[class*=icon-] {
 .spinner--dark {
   color: #333;
 }
-@-webkit-keyframes spinner {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
