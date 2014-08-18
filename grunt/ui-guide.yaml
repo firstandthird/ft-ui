@@ -8,4 +8,4 @@ ui:
       lessColors: lib/default-vars.less
       varFile: lib/default-vars.less
   src: styleguide
-  dest: example/index.html
+  dest: dist/index.html

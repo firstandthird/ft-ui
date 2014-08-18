@@ -1,4 +1,4 @@
 ghpage:
   options:
-    base: 'example'
+    base: 'dist'
   src: '**/*'
