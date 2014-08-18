@@ -1,47 +1,104 @@
+//Styles
+.button-link,
+.btn-link {
+  .oban-button-reset();
+  color: @color-accent1;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .button,
 .btn {
-  .oban-button-flat(@color-accent1);
+  .oban-button-flat(
+    @bgColor: @color-accent1;
+    @hoverBgColor: darken(@color-accent1, 10);
+  );
 
+  border-color: darken(@color-accent1, 5);
+  transition: background .3s ease-in;
+}
+
+.button,
+.button-border,
+.button-link {
   &[class*=icon-] {
     &:before {
-      padding-right: 10px;
+      padding-right: 5px;
     }
   }
 }
 
-.button-seconday,
-.btn-secondary {
-  .oban-button-flat(@color-accent2);
+.button-border,
+.btn-border {
+  .oban-button-normalize();
+  border: 1px solid @color-accent1;
+  border-radius: 5px;
+  color: @color-body;
+  transition: border-color .3s ease-in;
+  &:active,
+  &:hover {
+    color: @color-body;
+  }
+  &:hover {
+    border-color: darken(@color-accent1, 20);
+  }
+  &:active {
+    border-color: darken(@color-accent1, 30);
+  }
 }
 
-.button-disabled,
-.btn-disabled,
+//Modifiers
+.button--secondary { 
+  &.button {
+    background-color: @color-accent2;
+    border-color: darken(@color-accent2, 5);
+    &:hover {
+      background-color: darken(@color-accent2, 10);
+    }
+    &:active {
+      background-color: darken(@color-accent2, 30);
+    }
+  }
+  &.button-border {
+    border-color: @color-accent2;
+    &:hover {
+      border-color: darken(@color-accent2, 20);
+    }
+    &:active {
+      border-color: darken(@color-accent2, 30);
+    }
+  }
+  &.button-link {
+    color: @color-accent2;
+  }
+}
+
+.button--disabled,
+.btn--disabled,
 input[disabled],
 button[disabled] {
-  .oban-button-flat(@color-disabled);
+  opacity: .5;
+  cursor: not-allowed;
 }
-
-.button-reset,
-.btn-reset {
-  .oban-button-reset();
-}
-
 
 .button--large,
 .btn--large {
-  padding: 10px 12px;
+  padding: 10px 15px;
   font-size: 16px;
-}
-
-.button-border,
-.btn--border {
-  border-width: 3px;
-  background: transparent;
-  color: @color-body;
-  &:active,
-  &:hover {
-    border-width: 3px;
-    background: transparent;
-    color: @color-body;
+  &.button-link {
+    padding-left: 0;
   }
 }
+
+.button--small,
+.btn--small {
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
