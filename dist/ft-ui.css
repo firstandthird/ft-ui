@@ -181,8 +181,9 @@ small {
 .btn-link:hover {
   text-decoration: underline;
 }
+.btn,
 .button,
-.btn {
+.button-border {
   cursor: pointer;
   display: inline-block;
   border: 0;
@@ -194,98 +195,120 @@ small {
   line-height: 20px;
   padding: 4px 12px;
   text-align: center;
-  background-color: #34aadc;
-  color: #ffffff;
-  border: 1px solid #34aadc;
   border-radius: 5px;
-  border-color: #249ed2;
-  -webkit-transition: background 0.3s ease-in;
-          transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in, border-color 0.3s ease-in;
+          transition: background 0.3s ease-in, border-color 0.3s ease-in;
 }
+.btn:hover,
 .button:hover,
-.btn:hover {
+.button-border:hover {
   text-decoration: none;
 }
-.button.hover,
-.btn.hover,
-.button:hover,
-.btn:hover {
-  color: #ffffff;
-  background-color: #218ebd;
-  border: 1px solid #218ebd;
-}
-.button.active,
-.btn.active,
+.btn:active,
 .button:active,
-.btn:active {
-  background-color: #218ebd;
-  border: 1px solid #218ebd;
-  outline: 0;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+.button-border:active {
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
 }
+.btn,
+.button {
+  color: #fff;
+  background-color: #34aadc;
+  border: 1px solid #249ed2;
+}
+.btn:hover,
+.button:hover {
+  background-color: #218ebd;
+  border-color: #1d7ea7;
+}
+.btn:active,
+.button:active {
+  background-color: #1d7ea7;
+  border-color: #196d91;
+}
+.btn-border,
+.button-border {
+  border: 1px solid #249ed2;
+}
+.btn-border:hover,
+.button-border:hover {
+  border-color: #218ebd;
+}
+.btn-border:active,
+.button-border:active {
+  border-color: #1d7ea7;
+}
+.button-link {
+  color: #34aadc;
+}
+.btn[class*=icon-]:before,
 .button[class*=icon-]:before,
 .button-border[class*=icon-]:before,
 .button-link[class*=icon-]:before {
   padding-right: 5px;
 }
-.button-border,
-.btn-border {
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  background: transparent;
-  outline: 0;
-  padding: 0;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 4px 12px;
-  text-align: center;
-  border: 1px solid #34aadc;
-  border-radius: 5px;
-  color: #444444;
-  -webkit-transition: border-color 0.3s ease-in;
-          transition: border-color 0.3s ease-in;
-}
-.button-border:hover,
-.btn-border:hover {
-  text-decoration: none;
-}
-.button-border:active,
-.btn-border:active,
-.button-border:hover,
-.btn-border:hover {
-  color: #444444;
-}
-.button-border:hover,
-.btn-border:hover {
-  border-color: #196d91;
-}
-.button-border:active,
-.btn-border:active {
-  border-color: #114c66;
-}
+.button--secondary.btn,
 .button--secondary.button {
+  color: #fff;
   background-color: #4cd964;
-  border-color: #37d552;
+  border: 1px solid #37d552;
 }
+.button--secondary.btn:hover,
 .button--secondary.button:hover {
   background-color: #2ac845;
+  border-color: #26b33e;
 }
+.button--secondary.btn:active,
 .button--secondary.button:active {
-  background-color: #197328;
-}
-.button--secondary.button-border {
-  border-color: #4cd964;
-}
-.button--secondary.button-border:hover {
+  background-color: #26b33e;
   border-color: #219e37;
 }
+.button--secondary.btn-border,
+.button--secondary.button-border {
+  border: 1px solid #37d552;
+}
+.button--secondary.btn-border:hover,
+.button--secondary.button-border:hover {
+  border-color: #2ac845;
+}
+.button--secondary.btn-border:active,
 .button--secondary.button-border:active {
-  border-color: #197328;
+  border-color: #26b33e;
 }
 .button--secondary.button-link {
   color: #4cd964;
+}
+.button--subtle.btn,
+.button--subtle.button {
+  color: #fff;
+  background-color: #999999;
+  border: 1px solid #8c8c8c;
+}
+.button--subtle.btn:hover,
+.button--subtle.button:hover {
+  background-color: #34aadc;
+  border-color: #249ed2;
+}
+.button--subtle.btn:active,
+.button--subtle.button:active {
+  background-color: #737373;
+  border-color: #666666;
+}
+.button--subtle.btn-border,
+.button--subtle.button-border {
+  border: 1px solid #8c8c8c;
+}
+.button--subtle.btn-border:hover,
+.button--subtle.button-border:hover {
+  border-color: #34aadc;
+}
+.button--subtle.btn-border:active,
+.button--subtle.button-border:active {
+  border-color: #737373;
+}
+.button--subtle.button-link {
+  color: #999999;
 }
 .button--disabled,
 .btn--disabled,
@@ -310,6 +333,7 @@ button[disabled] {
 }
 .button--block {
   display: block;
+  float: none;
   width: 100%;
 }
 .form fieldset {

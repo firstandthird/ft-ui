@@ -1,4 +1,11 @@
 
+0.9.2 / 2014-08-18 
+==================
+
+  * updated buttons a bit
+  * fixed watch
+  * autoprefix dist
+
 0.9.1 / 2014-08-18 
 ==================
 
