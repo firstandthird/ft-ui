@@ -1,7 +1,7 @@
 css:
   files:
     - ft-ui.less
-    - example/styleguide.less
+    - dist/styleguide.less
     - lib/*.less
   tasks:
     - css
@@ -14,7 +14,7 @@ styleguide:
     - ui-guide
 example:
   files:
-    - example/*
+    - dist/*
   options:
     livereload: <%= livereloadPort %>
 build:
