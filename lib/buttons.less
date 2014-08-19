@@ -1,4 +1,34 @@
 //Styles
+.button--colorize(@color, @hoverColor: darken(@color, 10), @activeColor: darken(@color, 15)) {
+  &.btn,
+  &.button {
+    color: #fff;
+    background-color: @color;
+    border: 1px solid darken(@color, 5);
+    &:hover {
+      background-color: @hoverColor;
+      border-color: darken(@hoverColor, 5);
+    }
+    &:active {
+      background-color: @activeColor;
+      border-color: darken(@activeColor, 5);
+    }
+  }
+  &.btn-border,
+  &.button-border {
+    border: 1px solid darken(@color, 5);
+    &:hover {
+      border-color: @hoverColor;
+    }
+    &:active {
+      border-color: @activeColor;
+    }
+  }
+  &.button-link {
+    color: @color;
+  }
+}
+
 .button-link,
 .btn-link {
   .oban-button-reset();
@@ -8,17 +38,19 @@
   }
 }
 
+.btn,
 .button,
-.btn {
-  .oban-button-flat(
-    @bgColor: @color-accent1;
-    @hoverBgColor: darken(@color-accent1, 10);
-  );
-
-  border-color: darken(@color-accent1, 5);
-  transition: background .3s ease-in;
+.button-border {
+  .oban-button-normalize();
+  border-radius: 5px;
+  transition: background .3s ease-in, border-color .3s ease-in;
+  &:active {
+    transform: translateY(1px);
+  }
 }
+.button--colorize(@color-accent1);
 
+.btn,
 .button,
 .button-border,
 .button-link {
@@ -29,49 +61,13 @@
   }
 }
 
-.button-border,
-.btn-border {
-  .oban-button-normalize();
-  border: 1px solid @color-accent1;
-  border-radius: 5px;
-  color: @color-body;
-  transition: border-color .3s ease-in;
-  &:active,
-  &:hover {
-    color: @color-body;
-  }
-  &:hover {
-    border-color: darken(@color-accent1, 20);
-  }
-  &:active {
-    border-color: darken(@color-accent1, 30);
-  }
-}
-
 //Modifiers
 .button--secondary { 
-  &.button {
-    background-color: @color-accent2;
-    border-color: darken(@color-accent2, 5);
-    &:hover {
-      background-color: darken(@color-accent2, 10);
-    }
-    &:active {
-      background-color: darken(@color-accent2, 30);
-    }
-  }
-  &.button-border {
-    border-color: @color-accent2;
-    &:hover {
-      border-color: darken(@color-accent2, 20);
-    }
-    &:active {
-      border-color: darken(@color-accent2, 30);
-    }
-  }
-  &.button-link {
-    color: @color-accent2;
-  }
+  .button--colorize(@color-accent2);
+}
+
+.button--subtle {
+  .button--colorize(@color-subtle, @color-accent1);
 }
 
 .button--disabled,
@@ -99,6 +95,7 @@ button[disabled] {
 
 .button--block {
   display: block;
+  float: none;
   width: 100%;
 }
 
