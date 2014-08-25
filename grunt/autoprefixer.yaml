@@ -1,4 +1,0 @@
-css:
-  expand: true
-  src: 'dist/*.css'
-

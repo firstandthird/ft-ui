@@ -1,23 +1,33 @@
-css:
+aliases:
+  - default
+  - connect
+  - watch
+connect:
+  options:
+    base: dist/
+    useAvailablePort: true
+    open: true
+    livereload: <%= livereloadPort %>
+watch__css:
   files:
     - ft-ui.less
     - dist/styleguide.less
     - lib/*.less
   tasks:
     - css
-styleguide:
+watch__styleguide:
   files:
     - styleguide/**/*
     - lib/default-vars.less
     - node_modules/grunt-styles/tasks/styles.js
   tasks:
     - ui-guide
-example:
+watch__example:
   files:
     - dist/*
   options:
     livereload: <%= livereloadPort %>
-build:
+watch__build:
   files:
     - grunt/*
     - Gruntfile.js

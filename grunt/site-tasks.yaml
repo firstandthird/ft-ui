@@ -1,4 +1,6 @@
-ghpage:
+aliases:
+  - gh-pages
+gh-pages:
   options:
     base: 'dist'
   src: '**/*'

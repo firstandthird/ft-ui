@@ -1,4 +1,10 @@
-example:
+aliases:
+  - less
+  - autoprefixer
+autoprefixer:
+  expand: true
+  src: 'dist/*.css'
+less:
   options:
     relativeUrls: true
     paths:
