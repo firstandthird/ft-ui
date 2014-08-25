@@ -12,3 +12,4 @@ less:
   files:
     - 'dist/ft-ui.css': 'ft-ui.less'
     - 'dist/styleguide.css': 'lib/styleguide.less'
+    - 'dist/ft-ui-email.css': 'ft-ui-email.less'

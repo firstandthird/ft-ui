@@ -1,0 +1,36 @@
+
+body {
+  color: @color-body;
+  background: @color-background;
+  font-family: @font-primary-email;
+}
+
+a {
+  color: @color-link;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @color-heading !important;
+
+  a {
+    color: @color-link !important;
+  }
+  a:active,
+  a:visited {
+    color: darken(@color-link, 20) !important; // Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure.
+  }
+}
+
+#email-wrapper {
+  background: @color-email-background;
+}
+
+#email-content {
+  background: @color-background;
+  border-radius: 5px;
+  margin-top: @spacing-medium;
+  margin-bottom: @spacing-medium;
+  td {
+    padding: 10px;
+  }
+}

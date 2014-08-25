@@ -11,6 +11,7 @@ connect:
 watch__css:
   files:
     - ft-ui.less
+    - ft-ui-email.less
     - dist/styleguide.less
     - lib/*.less
   tasks:
