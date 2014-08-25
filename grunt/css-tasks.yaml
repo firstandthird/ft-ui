@@ -1,6 +1,7 @@
 aliases:
   - less
   - autoprefixer
+  - cssmin
 autoprefixer:
   expand: true
   src: 'dist/*.css'
@@ -13,3 +14,8 @@ less:
     - 'dist/ft-ui.css': 'ft-ui.less'
     - 'dist/styleguide.css': 'lib/styleguide.less'
     - 'dist/ft-ui-email.css': 'ft-ui-email.less'
+cssmin:
+  expand: true
+  cwd: 'dist'
+  src: '*.css'
+  dest: 'dist/'
