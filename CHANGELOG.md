@@ -1,4 +1,13 @@
 
+0.10.0 / 2014-08-26 
+==================
+
+  * added ft-ui-email for basic email styles
+  * added grunt-bump
+  * added cssmin
+  * updated ui-guide
+  * refactored to use config groups for grunt
+
 0.9.2 / 2014-08-18 
 ==================
 
