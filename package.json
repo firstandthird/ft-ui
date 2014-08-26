@@ -11,6 +11,7 @@
     "ui-guide": "^0.8.0",
     "grunt-gh-pages": "^0.9.1",
     "grunt-autoprefixer": "^1.0.0",
-    "grunt-contrib-cssmin": "^0.10.0"
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-bump": "0.0.15"
   }
 }

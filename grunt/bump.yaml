@@ -1,0 +1,12 @@
+options:
+  files:
+    - 'bower.json'
+  commit: true
+  commitMessage: 'Release %VERSION%'
+  commitFiles:
+    - '-a'
+  createTag: true
+  tagName: '%VERSION%'
+  tagMessage: 'Version %VERSION%'
+  push: true
+  pushTo: 'origin'
