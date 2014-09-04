@@ -1,4 +1,9 @@
 
+0.11.0 / 2014-09-04 
+==================
+
+  * added font-size-large and helper classes.  variables for headings
+
 0.10.0 / 2014-08-26 
 ==================
 
