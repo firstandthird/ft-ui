@@ -9,7 +9,7 @@ less:
   options:
     relativeUrls: true
     paths:
-      - bower_components/oban
+      - 'bower_components'
   files:
     - 'dist/ft-ui.css': 'ft-ui.less'
     - 'dist/styleguide.css': 'lib/styleguide.less'
